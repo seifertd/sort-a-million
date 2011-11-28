@@ -1,5 +1,5 @@
 GC.disable
-n = STDIN.gets.to_i
+n = STDIN.readline.to_i
 a = Array.new(1e6+1) { |n| "" }
 
 src = STDIN.read

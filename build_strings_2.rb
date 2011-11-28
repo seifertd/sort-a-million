@@ -1,10 +1,9 @@
 GC.disable
-n = STDIN.gets.to_i
+n = STDIN.readline.to_i
 a = Array.new(1e6+1) {|n| ""}
-NEWLINE = "\n"
 
 while n > 0
-  i_str = STDIN.gets
+  i_str = STDIN.readline
   i = i_str.to_i
   a[i] << i_str
   n -= 1

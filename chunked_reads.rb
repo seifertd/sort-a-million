@@ -5,7 +5,7 @@ CHUNK = 1024 * 1024 * 1024
 NEWLINE = "\n"
 INTEGER_RE = /(\d+)($)/m
 
-n = STDIN.gets.to_i
+n = STDIN.readline.to_i
 buf = " " * CHUNK
 leftovers = nil
 last_leftovers = nil
