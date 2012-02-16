@@ -18,6 +18,9 @@ time ruby build_strings.rb < million.txt > million_sorted_4.txt
 echo 'time ruby build_strings_2.rb < million.txt > million_sorted_5.txt'
 time ruby build_strings_2.rb < million.txt > million_sorted_5.txt
 
+echo 'time ruby ryan_davis.rb < million.txt > million_ryan_davis.txt'
+time ruby ryan_davis.rb < million.txt > million_ryan_davis.txt
+
 echo 'time sed -n "2,$p" million.txt | sort -n > million_bash.txt'
 time sed -n '2,$p' million.txt | sort -n > million_bash.txt
 
@@ -27,3 +30,4 @@ diff million_sorted.txt million_sorted_3.txt
 diff million_sorted.txt million_sorted_4.txt
 diff million_sorted.txt million_sorted_5.txt
 diff million_sorted.txt million_bash.txt
+diff million_sorted.txt million_ryan_davis.txt
