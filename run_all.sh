@@ -24,10 +24,15 @@ time ruby ryan_davis.rb < million.txt > million_ryan_davis.txt
 echo 'time sed -n "2,$p" million.txt | sort -n > million_bash.txt'
 time sed -n '2,$p' million.txt | sort -n > million_bash.txt
 
+#echo 'time ruby dummo.rb million.txt | sort -n > million_dummo.txt'
+#time ruby dummo.rb < million.txt > million_dummo.txt
+
 echo "CONFIRM"
-diff million_sorted.txt million_sorted_2.txt
-diff million_sorted.txt million_sorted_3.txt
-diff million_sorted.txt million_sorted_4.txt
-diff million_sorted.txt million_sorted_5.txt
-diff million_sorted.txt million_bash.txt
-diff million_sorted.txt million_ryan_davis.txt
+sha256sum million_sorted.txt
+sha256sum million_sorted_2.txt
+sha256sum million_sorted_3.txt
+sha256sum million_sorted_4.txt
+sha256sum million_sorted_5.txt
+sha256sum million_bash.txt
+sha256sum million_ryan_davis.txt
+#sha256sum million_dummo.txt
